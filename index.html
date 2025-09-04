@@ -5,8 +5,9 @@
   <title>Ketupat Tendang</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background: #f9f9f9;
+      font-family: 'Arial', sans-serif;
+      /* Gradient background supaya nampak hidup */
+      background: linear-gradient(135deg, #ffecd2, #fcb69f);
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -17,46 +18,40 @@
     .container {
       background: #fff;
       padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.25); /* lebih shadow */
       text-align: center;
-      max-width: 500px;
+      max-width: 550px;
+      animation: fadeIn 1s ease-in-out;
     }
     h1 {
-      color: #333;
+      color: #ff4b5c;
+      font-size: 22px;
+      margin-bottom: 15px;
     }
     p {
-      color: #555;
+      color: #333;
       font-size: 16px;
+      margin-bottom: 20px;
     }
     button {
-      margin-top: 20px;
-      padding: 15px 25px;
+      padding: 15px 30px;
       font-size: 18px;
       border: none;
-      border-radius: 8px;
-      background-color: #ff6f61;
+      border-radius: 12px;
+      background: linear-gradient(90deg, #ff6f61, #ff9472);
       color: white;
       cursor: pointer;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      transition: all 0.3s ease;
     }
     button:hover {
-      background-color: #ff3b2e;
+      transform: translateY(-3px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.3);
     }
     img {
       max-width: 100%;
-      border-radius: 8px;
+      border-radius: 12px;
       margin-bottom: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
     }
-  </style>
-</head>
-<body>
-  <div class="container">
-    <img src="https://via.placeholder.com/400x200.png?text=Tips+Hebat" alt="Tips Hebat">
-    <h1>Cerita Penuh Tuduhan Curang Elcah Akur Permintaan Peguam</h1>
-    <p>Baca Cerita Penuh.</p>
-    <button onclick="window.open('https://s.shopee.com.my/BK9uwxMRS'); window.location.href='https://beautifulnara.com/aku-rasa-lebih-baik-aku-diam-disaman-dek-tuduhan-curang-elcah-akur-permintaan-peguam/';">
-      Klik Sini
-    </button>
-  </div>
-</body>
-</html>
