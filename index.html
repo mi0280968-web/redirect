@@ -2,18 +2,73 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Landing Page</title>
+  <title>Ketupat Tendang</title>
   <style>
-    body { font-family: Arial, sans-serif; background: #e0f7fa; text-align: center; padding: 40px; }
-    h1 { color: #00796b; }
-    a { display: block; margin: 15px; font-size: 20px; color: #fff; background: #009688; padding: 12px; border-radius: 8px; text-decoration: none; }
-    a:hover { background: #00695c; }
+    body {
+      font-family: 'Arial', sans-serif;
+      /* Gradient background supaya nampak hidup */
+      background: linear-gradient(135deg, #a8edea, #fed6e3);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .container {
+      background: #fff;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.25); /* lebih shadow */
+      text-align: center;
+      max-width: 550px;
+      animation: fadeIn 1s ease-in-out;
+    }
+    h1 {
+      color: #ff4b5c;
+      font-size: 22px;
+      margin-bottom: 15px;
+    }
+    p {
+      color: #333;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+    button {
+      padding: 15px 30px;
+      font-size: 18px;
+      border: none;
+      border-radius: 12px;
+      background: linear-gradient(90deg, #ff6f61, #ff9472);
+      color: white;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      transition: all 0.3s ease;
+    }
+    button:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+    }
+    img {
+      max-width: 100%;
+      border-radius: 12px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
   </style>
 </head>
 <body>
-  <h1>Welcome! Pilih Info</h1>
-  <a href="kipas.html">Tips Jimat Elektrik + Kipas Shopee</a>
-  <a href="rice.html">Cara Simpan Beras + Rice Bucket Shopee</a>
-  <a href="powerbank.html">Travel Tips + Powerbank Shopee</a>
+  <div class="container">
+    <img src="https://via.placeholder.com/400x200.png?text=Tips+Hebat" alt="Ketupat Tendang">
+    <h1>Isteri Pengarah Maju Holdings didakwa terlibat pengubahan wang haram RM67.1 juta</h1>
+    <p>Baca Cerita Penuh</p>
+    <button onclick="window.open('https://s.shopee.com.my/LdepK3JUh'); window.location.href='https://www.astroawani.com/berita-malaysia/isteri-pengarah-maju-holdings-didakwa-terlibat-pengubahan-wang-haram-rm671-juta-537640';">
+      Baca Sini
+    </button>
+  </div>
 </body>
 </html>
